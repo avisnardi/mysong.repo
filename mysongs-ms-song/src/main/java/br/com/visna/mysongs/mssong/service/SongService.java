@@ -20,18 +20,4 @@ public class SongService {
 		return repository.findAll();
 	}
 	
-	public List<Song> listBkp() {
-		
-		System.out.println("Passou ............................");
-		List<Song> list = new ArrayList<Song>();
-		Song s = new Song();
-
-		s.setId(1L);
-		s.setName("Feira de Mangio");
-		
-		list.add(s);
-		
-		return list;
-	}
-	
 }
