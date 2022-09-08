@@ -28,9 +28,6 @@ public class SongController {
 	
 	@GetMapping
 	public List<Song> list() {	
-		
-		
 		return service.list();
-
 	}
 }
