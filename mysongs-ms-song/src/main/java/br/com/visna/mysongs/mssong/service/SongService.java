@@ -20,4 +20,9 @@ public class SongService {
 		return repository.findAll();
 	}
 	
+	public List<Song> searchByName(String name) {
+		// TODO Incluir paginação, ordenação e filtros
+		return repository.findByName(name);
+	}
+	
 }

@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-@FeignClient(name="SongEndpoint", url="http://localhost:3001/song")
-public interface SongEndpoint { 
+@FeignClient(name="ArtistEndpoint", url="http://localhost:3002/artist")
+public interface ArtistEndpoint {  
 	
 	@RequestMapping(method = RequestMethod.GET, value = "/name")
-	List<Song> searchByName(@RequestParam(value="name") String name);
+	List<Artist> searchByName(@RequestParam(value="name") String name);
 }

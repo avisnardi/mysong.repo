@@ -9,4 +9,8 @@ import br.com.visna.mysongs.msartist.model.Artist;
 @Repository
 public interface ArtistRepository extends org.springframework.data.repository.Repository<Artist, Long> {
 	public List<Artist> findAll();
+
+	public List<Artist> findByName(String name);
+
+
 }
